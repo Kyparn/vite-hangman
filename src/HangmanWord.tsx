@@ -4,11 +4,11 @@ type HangmanWordProps = {
     reveal?: boolean
   }
   
-  export function HangmanWord({
+  const HangmanWord = ({
     guessedLetters,
     wordToGuess,
     reveal = false,
-  }: HangmanWordProps) {
+  }: HangmanWordProps) => {
     return (
       <div
         style={{
@@ -38,4 +38,5 @@ type HangmanWordProps = {
         ))}
       </div>
     )
-  }
+}
+  export default HangmanWord
