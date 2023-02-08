@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react"
 import  HangmanDrawing  from "./HangmanDrawing"
 import  HangmanWord from "./HangmanWord"
 import  Keyboard from "./Keyboard"
-import words from "./wordList.json"
+import words from "./WordList.json"
 
 const getWord =() => {
   return words[Math.floor(Math.random() * words.length)]
